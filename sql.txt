@@ -1,0 +1,26 @@
+CREATE database yun;
+
+use yun;
+
+create table main_db(
+	user integer(5) unsigned NOT NULL,
+    pw varchar(10) NOT NULL,
+    crawler_ip varchar(15) NOT NULL,
+    keyword varchar(100) NOT NULL,
+    start_cal date NOT NULL,
+	stop_cal date NOT NULL,
+    cur_cal date,
+    flag boolean,
+    primary key(user)
+);
+
+select * from main_db;
+
+drop table main_db;
+
+UPDATE main_db SET flag = false WHERE user = 1;
+
+insert into main_db(user, pw, crawler_ip, keyword, start_cal, stop_cal, cur_cal, flag)
+values(1,'hadoop','192.168.4.81','트와이스','2018-01-01','2018-01-01','2018-01-01',false);
+
+SELECT * FROM main_db WHERE crawler_ip = '192.168.4.81';
