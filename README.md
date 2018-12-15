@@ -1,5 +1,5 @@
 ![GitPyCrawler](https://github.com/YeoHoonYun/CrawlerProject/blob/master/1.%20Crawler_Project%20(1).png?raw=true "GitPyCrawler") 
-# CrawlerProject(미완성)
+# CrawlerProject
 ## 2018-12-15
 ### First Crawler 업데이트
 * aum 뉴스 크롤러
